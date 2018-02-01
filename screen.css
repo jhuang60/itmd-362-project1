@@ -29,3 +29,11 @@ form {
   background-color: black;
   padding-top: 5%;
 }
+
+#introtext {
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-right: 20%;
+  padding-left: 20%;
+}
