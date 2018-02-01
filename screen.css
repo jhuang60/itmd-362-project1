@@ -24,3 +24,8 @@ form {
   background-position: center;
   padding-top: 40%;
 }
+
+#text {
+  background-color: black;
+  padding-top: 5%;
+}
