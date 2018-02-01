@@ -10,6 +10,13 @@ body {
 }
 
 li {
+  padding-bottom: 1.25em; /*25/20=1.25*/
+
+}
+
+ol {
+  padding-top: 40px;
+  padding-left: 40%;
 
 }
 
