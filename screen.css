@@ -5,33 +5,34 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.25em; /*20/16=1.25*/
   line-height: 1.25em; /*25/20=1.25*/
+  font-family: 'Cormorant Garamond', serif;
 }
+
 body {
-}
-
-li {
-  padding-bottom: 1.25em; /*25/20=1.25*/
-
-}
-
-ol {
-  padding-top: 40px;
-  padding-left: 40%;
-
-}
-
-#formsection {
-  background-image: url("images/background.jpg");
-  background-position: center;
-  background-attachment: fixed;
+  background-color: black;
 }
 
 #banner {
   background-image: url("images/pic2.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   padding-top: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#formsection {
+  background-image: url("images/background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Courgette', cursive;
+}
+
+#logo {
+  display: block;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 #text {
@@ -41,30 +42,25 @@ ol {
 
 #introtext {
   color: white;
-  text-align: center;
   padding-bottom: 5%;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
-#button {
-  text-decoration: none;
-  border-color: white;
-  opacity: 0.7;
-  color: black;
-  font-size: 20px;
-  padding: 10px 10px;
-  border-style: solid;
-  border-width: 2px;
+form {
+  padding: 0.6em 1em; /*12/20=.6 20/20=1*/
+  border: 0;
 }
 
-#button:hover {
-    background-color: black;
-    border-color:black;
-    opacity: 0.5;
-    color: white;
-    border-style: solid;
-    border-width: 1px;
+#name,
+#email,
+#phone,
+#level,
+#day,
+#time,
+#location {
+  width: 100%;
+  height: 2em;
 }
 
 footer {
@@ -74,4 +70,39 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+  li {
+    padding-bottom: 1.25em; /*25/20=1.25*/
+
+  }
+
+  ol {
+    padding-top: 40px;
+    padding-left: 40%;
+
+  }
+  #formsection {
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  #banner {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #text {
+    background-color: black;
+    padding-top: 5%;
+  }
+
+  #introtext {
+    padding-bottom: 5%;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
 }
