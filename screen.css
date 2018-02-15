@@ -30,18 +30,18 @@ body {
 
 #logo {
   display: block;
-  width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 #text {
-  background-color: black;
+  background-color: white;
   padding-top: 5%;
 }
 
 #introtext {
-  color: white;
+  color: black;
   padding-bottom: 5%;
   padding-right: 5%;
   padding-left: 5%;
@@ -76,12 +76,12 @@ footer {
 
   li {
     padding-bottom: 1.25em; /*25/20=1.25*/
-
   }
 
   ol {
-    padding-top: 40px;
-    padding-left: 40%;
+    padding-top: 25px;
+    padding-left: 25%;
+    padding-right: 25%;
 
   }
   #formsection {
@@ -94,13 +94,7 @@ footer {
     background-position: center;
   }
 
-  #text {
-    background-color: black;
-    padding-top: 5%;
-  }
-
   #introtext {
-    padding-bottom: 5%;
     padding-right: 20%;
     padding-left: 20%;
   }
