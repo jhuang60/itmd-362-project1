@@ -200,15 +200,11 @@ footer {
   padding-bottom: 0.611em; /*11/18=0.611*/
 }
 
-li {
-    padding-bottom: 1.222em; /*22/18=1.222*/
-}
-
 
 #banner {
   background-image: url("images/img5.jpeg");
   background-position: top;
-  padding-top: 5.91em; /* 130/22 =5.91*/
+  padding-top: 6.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -245,6 +241,16 @@ li {
 
 /* form elements */
 
+ol {
+  padding-top: 1.222em; /*22/18=1.222*/
+  padding-bottom: 1.222em
+
+}
+
+li {
+    padding-bottom: 1.222em; /*22/18=1.222*/
+}
+
 label
 ,input {
   display: block;
@@ -253,13 +259,15 @@ label
 input {
   border: 0;
   line-height: 1.222em; /*22/18=1.222*/
-  padding: 0.59em; /* 13/18 = .72*/
+  padding: 0.6em; /* 13/18 = .72*/
 }
 select {
   border: 0;
-  line-height: 1.222em; /*22/18=1.222*/
-  padding: 0.5em; /* 9/18 = 0.5*/
+  line-height: 1em; /*22/18=1.222*/
+  padding: 0.527em; /* 9.5/18 = 0.5*/
 }
+
+
 
 
 /* Responsive media */
@@ -279,9 +287,9 @@ select {
 @media screen and (min-width: 600px) {
 
 form {
-  padding-top: 1.222em; /*22/18=1.222*/
+  padding-left: 25%;
+  padding-right: 25%;
 }
-
 
   #formsection {
     background-position: center;
@@ -291,7 +299,6 @@ form {
   #banner {
     background-attachment: fixed;
     background-position: center;
-    padding-top: 5%;
   }
 
   #introtext {
