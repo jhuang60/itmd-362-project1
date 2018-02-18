@@ -263,8 +263,8 @@ input {
 }
 select {
   border: 0;
-  line-height: 1em; /*22/18=1.222*/
-  padding: 0.527em; /* 9.5/18 = 0.5*/
+  line-height: 1.222em; /*22/18=1.222*/
+  padding: 0.527em; /* 9.5/18 = 0.527*/
 }
 
 
@@ -317,8 +317,31 @@ form {
 
 @media screen and (min-width: 990px) {
 
+  #logo {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-bottom: 5%;
+  }
+
+  #introtext {
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+  #text {
+    padding-top: 2.444em; /*44/18=2.444*/
+    padding-bottom: 2.444em; /*44/18=2.444*/
+  }
+
+  #banner {
+    padding-top: 8.5em; /* 187/22 = 8.5*/
+  }
+
 }
 
 @media screen and (min-width: 1400px) {
-
+  form {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 }
