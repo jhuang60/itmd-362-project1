@@ -252,7 +252,7 @@ li {
 }
 
 label
-,input {
+, input {
   display: block;
 }
 
@@ -260,7 +260,9 @@ input {
   border: 0;
   line-height: 1.222em; /*22/18=1.222*/
   padding: 0.6em; /* 13/18 = .72*/
+  background: white;
 }
+
 select {
   border: 0;
   line-height: 1.222em; /*22/18=1.222*/
