@@ -16,8 +16,8 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: inherit; /* 1 */
   margin: 0; /* 2 */
 }
 
@@ -238,9 +238,11 @@ footer {
   left: 0;
   width: 100%;
 }
-label,input{
+label
+,input {
   display: block;
 }
+
 input {
   border: 0;
   line-height: 2em;
