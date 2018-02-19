@@ -26,6 +26,24 @@
     } else {
       $('#eraseday').remove();
     }
+    if(!levelvalidation($('#level').val())) {
+      $('#eraselevel').remove();
+      $('#levellistitem').append('<li id="eraselevel">Please select a level</li>');
+    } else {
+      $('#eraselevel').remove();
+    }
+    if(!timevalidation($('#time').val())) {
+      $('#erasetime').remove();
+      $('#timelistitem').append('<li id="erasetime">Please select a time</li>');
+    } else {
+      $('#erasetime').remove();
+    }
+    if(!locationvalidation($('#location').val())) {
+      $('#eraselocation').remove();
+      $('#locationlistitem').append('<li id="eraselocation">Please select a location</li>');
+    } else {
+      $('#eraselocation').remove();
+    }
 
 
   });
