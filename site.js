@@ -45,6 +45,15 @@
       $('#eraselocation').remove();
     }
 
+    if(locationvalidation($('#location').val()) && timevalidation($('#time').val())
+    && levelvalidation($('#level').val()) && dayvalidation($('#day').val())
+    && namevalidation($('#name').val()) && phonevalidation($('#phone').val())
+    && emailvalidation($('#email').val()) && locationvalidation($('#location').val())){
+      console.log($('#name').val(), $('#phone').val(), $('#email').val(), $('#day').val(),
+      $('#level').val(),$('#time').val(),$('#location').val());
+      $('#erasesucess').remove();
+      $('#submitlistitem').append('<li id="erasesucess">Form was sucessfully submitted! </li>');
+    }
 
   });
 //name validation
