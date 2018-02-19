@@ -45,34 +45,31 @@
       $('#eraselocation').remove();
     }
 
-    if(locationvalidation($('#location').val()) && timevalidation($('#time').val())
-    && levelvalidation($('#level').val()) && dayvalidation($('#day').val())
-    && namevalidation($('#name').val()) && phonevalidation($('#phone').val())
-    && emailvalidation($('#email').val()) && locationvalidation($('#location').val())){
+    if(locationvalidation($('#location').val()) && timevalidation($('#time').val()) && levelvalidation($('#level').val()) && dayvalidation($('#day').val()) && namevalidation($('#name').val()) && phonevalidation($('#phone').val()) && emailvalidation($('#email').val()) && locationvalidation($('#location').val())){
       console.log($('#name').val(), $('#phone').val(), $('#email').val(), $('#day').val(),
-      $('#level').val(),$('#time').val(),$('#location').val());
+        $('#level').val(), $('#time').val(), $('#location').val());
       $('#erasesucess').remove();
-      $('#submitlistitem').append('<li id="erasesucess">Form was sucessfully submitted! </li>');
+      $('#submitlistitem').append('<li id="erasesucess">Form was successfully submitted! </li>');
     }
 
   });
-//name validation
-function namevalidation(name) {
-  var result = false;
-  if (name.length > 0) {
-    result = true;
-  }
-  return result;
-}
-//phone validation
-  function phonevalidation(phone) {
+  // name validation
+  function namevalidation(name) {
     var result = false;
-      if (phone.match(/^[0-9]{10}$/)){
-        result = true;
-      }
+    if (name.length > 0) {
+      result = true;
+    }
     return result;
   }
-//email validation
+  // phone validation
+  function phonevalidation(phone) {
+    var result = false;
+    if (phone.match(/^[0-9]{10}$/)){
+      result = true;
+    }
+    return result;
+  }
+  // email validation
   function emailvalidation(email) {
     var result = false;
 
@@ -83,39 +80,40 @@ function namevalidation(name) {
     }
     return result;
   }
-//date validation
-function dayvalidation(day) {
-  var result = false;
-  if (!day){
-    result = false;
-  } else {
-    result = true;
+  // date validation
+  function dayvalidation(day) {
+    var result = false;
+    if (!day){
+      result = false;
+    } else {
+      result = true;
+    }
+
+    return result;
+  }
+  // level validation
+  function levelvalidation(level) {
+    var result = false;
+    if (level !== "") {
+      result = true;
+    }
+    return result;
+  }
+  // time validation
+  function timevalidation(time) {
+    var result = false;
+    if (time !== "") {
+      result = true;
+    }
+    return result;
   }
 
-  return result;
-}
-//level
-function levelvalidation(level) {
-  var result = false;
-  if (level !== "") {
-    result = true;
+  // location validation
+  function locationvalidation(location) {
+    var result = false;
+    if (location !==  "") {
+      result = true;
+    }
+    return result;
   }
-  return result;
-}
-//time
-function timevalidation(time) {
-  var result = false;
-  if (time !== "") {
-    result = true;
-  }
-  return result;
-}
-//location
-function locationvalidation(location) {
-  var result = false;
-  if (location !==  "") {
-    result = true;
-  }
-  return result;
-}
 })(jQuery);
