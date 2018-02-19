@@ -1,7 +1,6 @@
 (function($){
   $('#inputform').on('submit', function(e) {
     e.preventDefault();
-
 //name validation
 function namevalidation(name) {
   var result = false;
@@ -38,6 +37,14 @@ function dayvalidation(day) {
     result = true;
   }
 
+  return result;
+}
+//level
+function levelvalidation(level) {
+  var result = false;
+  if (level !== "") {
+    result = true;
+  }
   return result;
 }
 
