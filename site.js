@@ -8,7 +8,25 @@
     } else {
       $('#erasename').remove();
     }
-    
+    if (!phonevalidation($('#phone').val())) {
+      $('#erasephone').remove();
+      $('#phonelistitem').append('<li id="erasephone">Please check the phone number you entered</li>');
+    } else {
+      $('#erasephone').remove();
+    }
+    if(!emailvalidation($('#email').val())) {
+      $('#eraseemail').remove();
+      $('#emaillistitem').append('<li id="eraseemail">Please check your email</li>');
+    } else{
+      $('#eraseemail').remove();
+    }
+    if(!dayvalidation($('#day').val())) {
+      $('#eraseday').remove();
+      $('#daylistitem').append('<li id="eraseday">Please enter a date</li>');
+    } else {
+      $('#eraseday').remove();
+    }
+
 
   });
 //name validation
