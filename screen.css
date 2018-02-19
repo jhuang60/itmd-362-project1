@@ -267,6 +267,7 @@ input {
   line-height: 1.222em; /*22/18=1.222*/
   padding: 0.6em; /* 13/18 = .72*/
   background: white;
+  box-sizing: border-box;
 }
 
 select {
@@ -274,6 +275,7 @@ select {
   line-height: 1.222em; /*22/18=1.222*/
   padding: 0.527em; /* 9.5/18 = 0.527*/
 }
+
 
 #erasename,
 #erasephone,
