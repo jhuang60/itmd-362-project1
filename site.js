@@ -10,5 +10,13 @@ function namevalidation(name) {
   }
   return result;
 }
+//phone validation
+  function phonevalidation(phone) {
+    var result = false;
+      if (phone.match(/^[0-9]{10}$/)){
+        result = true;
+      }
+    return result;
+  }
 
 })(jQuery);
