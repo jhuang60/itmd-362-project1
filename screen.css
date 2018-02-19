@@ -269,7 +269,19 @@ select {
   padding: 0.527em; /* 9.5/18 = 0.527*/
 }
 
+#erasename,
+#erasephone,
+#eraseemail,
+#eraseday,
+#eraselevel,
+#erasetime,
+#eraselocation {
+  color: red;
+}
 
+#erasesucess {
+  color: green;
+}
 
 
 /* Responsive media */
