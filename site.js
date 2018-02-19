@@ -56,5 +56,12 @@ function timevalidation(time) {
   }
   return result;
 }
-
+//location
+function locationvalidation(location) {
+  var result = false;
+  if (location !==  "") {
+    result = true;
+  }
+  return result;
+}
 })(jQuery);
