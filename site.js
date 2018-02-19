@@ -29,5 +29,16 @@ function namevalidation(name) {
     }
     return result;
   }
+//date validation
+function dayvalidation(day) {
+  var result = false;
+  if (!day){
+    result = false;
+  } else {
+    result = true;
+  }
+
+  return result;
+}
 
 })(jQuery);
