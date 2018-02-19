@@ -18,5 +18,16 @@ function namevalidation(name) {
       }
     return result;
   }
+//email validation
+  function emailvalidation(email) {
+    var result = false;
+
+    if (email.length > 0) {
+      if(email.match(/.+@.+/)){
+        result = true;
+      }
+    }
+    return result;
+  }
 
 })(jQuery);
