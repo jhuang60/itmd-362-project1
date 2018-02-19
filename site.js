@@ -2,6 +2,15 @@
   $('#inputform').on('submit', function(e) {
     e.preventDefault();
 
+    if(!namevalidation($('#name').val())) {
+      $('#erasename').remove();
+      $('#namelistitem').append('<li id="erasename">Please enter your name</li>');
+    } else {
+      $('#erasename').remove();
+    }
+    
+
+  });
 //name validation
 function namevalidation(name) {
   var result = false;
